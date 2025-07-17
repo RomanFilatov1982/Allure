@@ -33,6 +33,7 @@ public class SelenideTest {
         $(withText("#1")).should(Condition.exist);
 
     }
+
     @AfterEach
     void afterEach() {
         Selenide.closeWebDriver();

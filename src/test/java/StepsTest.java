@@ -58,6 +58,7 @@ public class StepsTest {
         steps.openIssuesTab();
         steps.shouldSeeIssueWithNumber(ISSUE);
     }
+
     @AfterEach
     void afterEach() {
         Selenide.closeWebDriver();

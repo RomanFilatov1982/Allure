@@ -21,7 +21,7 @@ public class LabelTest {
     @Story("Создание Issue")
     @Owner("FilatovRI")
     @Severity(SeverityLevel.BLOCKER)
-    @Link(value ="Testing", url = "https://testing.github.com")
+    @Link(value = "Testing", url = "https://testing.github.com")
     @DisplayName("Создание Issue для авторизованного пользователя")
     void testStaticLabels() {
 
@@ -38,6 +38,7 @@ public class LabelTest {
         Allure.label("severity", SeverityLevel.CRITICAL.value());
         Allure.link("Testing", "https://testing.github.com");
     }
+
     @AfterEach
     void afterEach() {
         Selenide.closeWebDriver();

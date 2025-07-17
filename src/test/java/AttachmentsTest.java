@@ -17,7 +17,7 @@ public class AttachmentsTest {
 
     @BeforeEach
     void setUp() {
-               Configuration.pageLoadTimeout = 100000;
+        Configuration.pageLoadTimeout = 100000;
         Configuration.holdBrowserOpen = true;
     }
 
@@ -41,6 +41,7 @@ public class AttachmentsTest {
         steps.openMainPage();
         steps.takeScreenshot();
     }
+
     @AfterEach
     void afterEach() {
         Selenide.closeWebDriver();

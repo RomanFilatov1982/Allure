@@ -44,6 +44,7 @@ public class WebSteps {
     public byte[] takeScreenshot() {
         return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
+
     @AfterEach
     void afterEach() {
         Selenide.closeWebDriver();
