@@ -17,8 +17,8 @@ public class AttachmentsTest {
 
     @BeforeEach
     void setUp() {
-        Configuration.pageLoadTimeout = 100000;
-        Configuration.holdBrowserOpen = true;
+        Configuration.baseUrl = "https://github.com";
+        Configuration.pageLoadStrategy = "eager";
     }
 
     @Test
